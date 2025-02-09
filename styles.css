@@ -136,7 +136,7 @@ header {
 }
 /* Contenido del Modal */
 .modal-content {
-    background-color: #f9f9f9;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
