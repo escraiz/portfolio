@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - David Coz Palacios</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+             
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <header id="inicio" class="fade-in">
+        <h1>David Coz Palacios</h1>
+        <p class="disponible">💼 Disponible para trabajar</p>
+        <p class="descripcion">Web Developer Junior, enfocado en el <strong>Back-End</strong>.  
+           Estudiando para ser un programador de videojuegos.</p>
+        <div class="redes">
+            <a href="mailto:escraiz@gmail.com">Email</a>
+            <!-- Botón para abrir el CV en una ventana emergente -->
+            <a href="#" id="btn-cv" class="btn-cv">📄CV</a>
+            <!-- Modal (Ventana Emergente) -->
+            <div id="cv-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="recursos/Curiculum.pdf" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Sección Skills -->
+    <section id="skills" class="slide-in-left">
+        <h2>⚡ Skills</h2>
+        <div class="iconos">
+
+            <div class="skill">
+                <i class="fab fa-html5"></i> HTML
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i> CSS
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i> JavaScript
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i> MySQL
+            </div>
+            <div class="skill">
+                <i class="devicon-php-plain"></i> PHP
+            </div>
+            <div class="skill">
+                <i class="fab fa-java"></i> Java
+            </div>
+            <div class="skill">
+                <i class="fas fa-code"></i> C#
+            </div>
+            <div class="skill">
+                <i class="fab fa-unity"></i> Unity
+            </div>
+            <div class="skill">
+                <i class="devicon-blender-original"></i> Blender
+            </div>
+            <div class="skill">
+                <i class="fab fa-github"></i> GitHub
+            </div>
+        </div>
+    </section>
+    <!-- Sección Proyectos -->
+   <section id="projects">
+        <h2 class="slide-in-right">💻 Proyectos</h2>
+        
+        <div class="project-card">
+            <!-- Slider de Imágenes -->
+            <div class="proyecto">
+                <div class="slider">
+                    <img src="recursos/pagina_web/img/inicio.png" class="slide active" alt="Proyecto 1">
+                    <img src="recursos/pagina_web/img/menu.png" class="slide" alt="Proyecto 2">
+                    <!-- Flechas de navegación -->
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+    
+            <!-- Información del Proyecto -->
+            <h3>Restaurante Peñacastillo</h3>
+            <p>App creada con JavaScript, HTML, CSS y PHP para reservas de platos del instituto de Peñacastillo.</p>
+            
+            <!-- Botón para el Modal -->
+            <a href="#" id="btn-cd" class="btn-cd">🔗 Code</a>
+        </div>
+        <div class="project-card">
+            <!-- Slider de Imágenes -->
+                <div class="proyecto">
+                    <div class="slider">
+                        <img src="recursos/juego/img/menu.png" class="slide active" alt="Proyecto 3">
+                        <img src="recursos/juego/img/juego.png" class="slide" alt="Proyecto 4">
+                        <video class="slide" controls autoplay muted>
+                            <source src="recursos/juego/img/video.mp4" type="video/mp4">
+                        </video>
+                     
+                        <!-- Flechas de navegación -->
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+                
+                <h3>Juego 2D</h3>
+                <p>Juego 2D de cruzar la carretera hecho en unity de nombre MAOACHE</p>
+                  <!-- Botón para el Modal -->
+                <a href="recursos/juego/maoache.zip" id="btn-cd" class="btn-cd">juego</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <!-- Slider de Imágenes -->
+                <div class="proyecto">
+                    <div class="slider">
+                        <img src="recursos/blender/mesa1.png" class="slide active" alt="Proyecto 5">
+                        <img src="recursos/blender/mesa2.png" class="slide" alt="Proyecto 6">
+                       
+                     
+                        <!-- Flechas de navegación -->
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+                
+                <h3>Blender</h3>
+                <p>Mesa de terciopelo</p>
+            </div>
+        </div>
+
+         <!-- Modal (Ventana Emergente) -->
+         <div id="CDmodal" class="CDmodal">
+             <div class="modal-content"> 
+                <h2>Repositorio de Código</h2>
+                <p>Encuentra el código en el siguiente enlace:</p>
+                <span class="close">&times;</span>
+                <iframe src="recursos/pagina_web/code/home.php" width="100%" height="500px"></iframe>
+             </div>
+         </div>
+    </section>
+    
+
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="fade-in">
+        <h2>📬 Contacto</h2>
+        <p>📧 Email: <a href="mailto:escraiz@gmail.com">escraiz@gmail.com</a></p>
+        <p>📞 Teléfono: <a href="tel:+34654724828">+34 654724828</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 David Coz Palacios | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
